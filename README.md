@@ -21,6 +21,7 @@ Each section follows a structured analytics flow:
 - You can access the SQL queries used for **Data Validation and Cleaning** [HERE](Data_validation_for_bikedataset.sql)
 - You can access the SQL queries used for **Key business insights** [HERE](key_insights_bikedataset.sql)
 - You can access the **Interactive Power BI Dashboard** of the entire project [HERE](NewBikeDashboard.pbix)
+- Acess the dataset here: [Rides](Rides.csv) , [Stations](Stations.csv) , [Users](Users.csv)
 ---
 
 ## 1. Membership-Based Usage Analysis
