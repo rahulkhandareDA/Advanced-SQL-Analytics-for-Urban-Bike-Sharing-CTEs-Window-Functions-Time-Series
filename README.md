@@ -14,8 +14,13 @@ This project applies SQL-based analytics to ride-level, user-level, and station-
 
 Each section follows a structured analytics flow:
 
-**Business Question → Insight → Recommendation → Visual → SQL Query**
+**Business Question → Insight → Recommendation → Visual**
 
+## Useful links
+
+- You can access the SQL queries used for **Data Validation and Cleaning** [HERE](Data_validation_for_bikedataset.sql)
+- You can access the SQL queries used for **Key business insights** [HERE](key_insights_bikedataset)
+- You can access the **Interactive Power BI Dashboard** of the entire project [HERE](NewBikeDashboard)
 ---
 
 ## 1. Membership-Based Usage Analysis
@@ -31,11 +36,11 @@ Design engagement and pricing strategies separately for subscribers and casual u
 
 ### Supporting Visual  
 
+<img src="membership.png" width="400">
 
 ### SQL Query Reference  
-`membership_usage_analysis.sql`
+`- **SQL Query** [HERE]()
 
----
 
 ## 2️. Time-Based Demand & Peak Hour Analysis
 
@@ -43,16 +48,17 @@ Design engagement and pricing strategies separately for subscribers and casual u
 When does demand peak during the day?
 
 ### Key Insight  
-Ride volume follows a strong commuter-driven pattern with distinct peak hours and low midday activity.
+Ride volume follows a strong commuter-driven pattern with distinct peak hours  and low midday activity. Peak Demand: Usage spikes at 7:00 AM and 3:00 PM.
 
 ### Recommendation  
-Align operational planning and bike availability with observed peak demand windows.
+Ensure 'rebalancing' crews (the trucks that move bikes) are active between 10:00 AM and 2:00 PM to prepare for the evening rush.
 
 ### Supporting Visual  
-- Hourly ride volume bar chart  
+
+<img src="hourlystart.png" width="600">
 
 ### SQL Query Reference  
-`peak_hour_analysis.sql`
+`- **SQL Query** [HERE]()
 
 ---
 
@@ -68,10 +74,11 @@ Daily ride counts show volatility, but the 7-day moving average reveals a stable
 Use smoothed trends rather than raw daily metrics for performance monitoring and forecasting.
 
 ### Supporting Visual  
-- Line chart: Daily rides vs 7-day moving average  
+<img src="movingavg.png" width="600"> 
 
 ### SQL Query Reference  
-`daily_moving_average.sql`
+`
+- **SQL Query** [HERE]()
 
 ---
 
@@ -87,10 +94,10 @@ A small subset of stations accounts for a disproportionate share of total ride s
 Prioritize maintenance, capacity, and availability at high-traffic stations.
 
 ### Supporting Visual  
-- Top 10 stations by ride volume  
+- <img src="busy.png" width="450"> 
 
 ### SQL Query Reference  
-`station_popularity.sql`
+- **SQL Query** [HERE]()
 
 ---
 
@@ -100,16 +107,19 @@ Prioritize maintenance, capacity, and availability at high-traffic stations.
 How are rides distributed by duration?
 
 ### Key Insight  
-Rides naturally cluster into short, medium, and long duration segments, reflecting commuter and leisure usage patterns.
+Ride duration distribution is heavily skewed toward medium-length trips, with nearly **80% of total rides** (≈12,000 out of 15,000) falling between **10 and 50 minutes**, while short and long rides each account for roughly 10% of total volume. This concentration suggests predictable, utility-driven usage rather than edge-case ride behavior.
 
 ### Recommendation  
-Use duration segments to inform pass design and pricing thresholds.
 
-### Supporting Visual  
-- Ride distribution by duration category  
+- Set pricing breakpoints and free-ride thresholds to comfortably accommodate rides up to 50 minutes, minimizing friction for the dominant user segment.
+
+- Design time-bundled passes (e.g., daily or weekly plans) optimized for 15–45 minute trips, reflecting actual usage behavior.
+
+- Prioritize bike availability and station readiness to support predictable, medium-duration rides during peak commuting hours.
+
 
 ### SQL Query Reference  
-`ride_duration_segmentation.sql`
+- **SQL Query** [HERE]()
 
 ---
 
@@ -122,13 +132,11 @@ Which stations consistently gain or lose bikes?
 Certain stations act as persistent bike sinks or sources, indicating rebalancing inefficiencies.
 
 ### Recommendation  
-Implement targeted rebalancing and incentive mechanisms to correct station-level imbalances.
-
-### Supporting Visual  
-- Net ride flow table or bar chart  
+Prioritize maintenance, capacity, and availability at high-traffic stations.
 
 ### SQL Query Reference  
-`net_ride_flow.sql`
+`
+- **SQL Query** [HERE]()
 
 ---
 
@@ -143,11 +151,10 @@ MoM user growth alone overstates platform health; inactivity-based churn provide
 ### Recommendation  
 Track net user growth by combining acquisition and churn metrics.
 
-### Supporting Visual  
-- MoM growth vs churn trend  
 
 ### SQL Query Reference  
-`mom_growth_and_churn.sql`
+`
+- **SQL Query** [HERE]()`
 
 ---
 
