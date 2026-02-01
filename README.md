@@ -94,7 +94,7 @@ A small subset of stations accounts for a disproportionate share of total ride s
 Prioritize maintenance, capacity, and availability at high-traffic stations.
 
 ### Supporting Visual  
-- <img src="busy.png" width="450"> 
+- <img src="busy.png" width="660"> 
 
 ### SQL Query Reference  
 - **SQL Query** [HERE](popular.sql)
