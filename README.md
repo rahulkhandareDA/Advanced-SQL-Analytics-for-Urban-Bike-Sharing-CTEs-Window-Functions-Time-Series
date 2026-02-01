@@ -162,10 +162,14 @@ Month-over-Month growth fluctuates significantly, ranging from **+57% at peak** 
 
 ## Conclusion
 
-This project demonstrates a structured SQL-driven approach to answering real-world business and operational questions in a shared mobility context.
+## **Project Conclusion**
 
-By linking business questions directly to insights, recommendations, and supporting SQL queries, the analysis reflects how data teams communicate findings to decision-makers in production environments.
+- The project successfully tracks **Month-on-Month (MoM) user growth**, providing a clear view of **user acquisition trends** over time.  
+- The data shows **high fluctuations**, indicating **inconsistent growth patterns** across months.  
+- Certain months recorded **strong user growth**, proving that **specific acquisition efforts were effective**.  
+- Growth was **not sustained**, with multiple months showing **declines in new users**, highlighting **retention or consistency issues**.  
+- Overall, the project enables **data-driven decision-making** and highlights areas to improve **user retention, acquisition strategy, and long-term growth stability**.
 
 ---
 
-# Skills: SQL, MySQL, Business Intelligence, Data Analysis, CTEs, Window Functions, Time-Series Analysis
+### Skills: SQL, MySQL, Business Intelligence, Data Analysis, CTEs, Window Functions, Time-Series Analysis
